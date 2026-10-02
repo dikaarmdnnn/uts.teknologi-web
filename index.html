@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - UTS Teknologi Web</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-3xl w-full bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden my-8">
+        
+        <!-- Header / Banner -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-8 text-center relative">
+            <!-- Foto Profil Placeholder -->
+            <div class="w-32 h-32 mx-auto rounded-full border-4 border-slate-800 overflow-hidden shadow-lg mb-4 bg-slate-700 flex items-center justify-center">
+                <!-- Ubah src di bawah dengan link foto Anda atau simpan foto di folder yang sama (misal: src="foto.jpg") -->
+                <img src="https://via.placeholder.com/150" alt="Foto Profil" class="w-full h-full object-cover">
+            </div>
+            <!-- Nama & Prodi -->
+            <h1 class="text-3xl font-bold text-white tracking-wide">Andika Ramadanu</h1>
+            <p class="text-blue-200 mt-1 font-medium">Teknik Komputer</p>
+        </div>
+
+        <!-- Detail Profil -->
+        <div class="p-6 md:p-8 space-y-6">
+            
+            <!-- Grid Informasi Akademik -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">NIM</p>
+                    <p class="text-lg font-bold text-blue-400 mt-1">2405110051</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Program Studi</p>
+                    <p class="text-lg font-bold text-blue-400 mt-1">Teknik Komputer</p>
+                </div>
+                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
+                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Tahun Angkatan</p>
+                    <p class="text-lg font-bold text-blue-400 mt-1">2024</p>
+                </div>
+            </div>
+
+            <hr class="border-slate-700">
+
+            <!-- Detail Pertanyaan UTS -->
+            <div class="space-y-4">
+                
+                <!-- Kesibukan Selain Kuliah -->
+                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
+                    <div class="flex items-center space-x-3 text-indigo-400 mb-2">
+                        <i class="fa-solid fa-briefcase text-xl"></i>
+                        <h2 class="font-bold text-lg text-white">Kesibukan Selain Kuliah</h2>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed pl-8">
+                        Mengikuti kepanitiaan UNFEST dan ELCO 2026, selain itu saya sering berolahraga lari.
+                    </p>
+                </div>
+
+                <!-- Cita-Cita -->
+                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
+                    <div class="flex items-center space-x-3 text-emerald-400 mb-2">
+                        <i class="fa-solid fa-bullseye text-xl"></i>
+                        <h2 class="font-bold text-lg text-white">Cita-Cita</h2>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed pl-8">
+                        Cita-cita saya lanjut studi S2 atau mendaftar Management Trainee (MT).
+                    </p>
+                </div>
+
+                <!-- Bidang IT yang Ingin Didalami -->
+                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
+                    <div class="flex items-center space-x-3 text-amber-400 mb-2">
+                        <i class="fa-solid fa-code text-xl"></i>
+                        <h2 class="font-bold text-lg text-white">Bidang IT yang Ingin Didalami (Expertise)</h2>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed pl-8">
+                        <strong>Cyber Security</strong>, <strong>Artificial Intelligence</strong>, <strong>IT Project</strong>, atau <strong>UI/UX</strong>. Saya tertarik pada bidang Cyber Security, Artificial Intelligence, IT Project, dan UI/UX Designer karena bidang-bidang tersebut memiliki peran penting dalam perkembangan teknologi. Saya ingin menambah pengalaman dan pemahaman dalam mengembangkan teknologi, mulai dari menjaga keamanan sistem, memanfaatkan kecerdasan buatan, mengelola proyek IT, hingga membuat aplikasi yang mudah dan nyaman digunakan oleh pengguna.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-slate-900/80 p-4 text-center border-t border-slate-700 text-slate-500 text-xs">
+            Tugas UTS Mata Kuliah Teknologi Web &copy; 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
