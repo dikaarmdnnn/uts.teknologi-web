@@ -3,92 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Mahasiswa - UTS Teknologi Web</title>
+    <title>UTS Teknologi Web - Andika Ramadanu</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Caveat (Script/Cursive) & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-cursive {
+            font-family: 'Caveat', cursive;
+        }
+        .font-sans {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom Scrollbar halus */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c2410c;
+            border-radius: 4px;
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center p-4">
+<body class="bg-[#e8e4dc] min-h-screen flex items-center justify-center p-3 md:p-8 font-sans text-[#292524] antialiased">
 
-    <div class="max-w-3xl w-full bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden my-8">
+    <!-- Container Utama dengan Rasio 16:9 Melebar di Desktop -->
+    <div class="max-w-6xl w-full md:aspect-[16/9] bg-[#f5f2eb] rounded-3xl shadow-2xl p-6 md:p-10 relative overflow-hidden border border-[#dcd6c8] flex flex-col justify-between my-auto">
         
-        <!-- Header / Banner -->
-        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-8 text-center relative">
-            <!-- Foto Profil Placeholder -->
-            <div class="w-32 h-32 mx-auto rounded-full border-4 border-slate-800 overflow-hidden shadow-lg mb-4 bg-slate-700 flex items-center justify-center">
-                <!-- Ubah src di bawah dengan link foto Anda atau simpan foto di folder yang sama (misal: src="foto.jpg") -->
-                <img src="https://via.placeholder.com/150" alt="Foto Profil" class="w-full h-full object-cover">
-            </div>
-            <!-- Nama & Prodi -->
-            <h1 class="text-3xl font-bold text-white tracking-wide">Andika Ramadanu</h1>
-            <p class="text-blue-200 mt-1 font-medium">Teknik Komputer</p>
+        <!-- Tulisan Cursive Background -->
+        <div class="absolute -top-1 -left-3 md:-top-1 md:-left-5 text-[110px] md:text-[180px] font-cursive text-[#c2410c] leading-none select-none pointer-events-none opacity-85 z-0 transform -rotate-12">
+            uts teknologi web
         </div>
 
-        <!-- Detail Profil -->
-        <div class="p-6 md:p-8 space-y-6">
+        <!-- Tag UTS Kanan Atas -->
+        <div class="absolute top-6 right-8 text-[10px] md:text-xs font-semibold tracking-widest text-[#00000] uppercase z-20">
+            UTS TEKNOLOGI WEB
+        </div>
+
+        <!-- Grid Konten Utama (Kiri Teks & Profil, Kanan Photo Strip) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 z-10 relative h-full items-center mt-8 md:mt-4">
             
-            <!-- Grid Informasi Akademik -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
-                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">NIM</p>
-                    <p class="text-lg font-bold text-blue-400 mt-1">2405110051</p>
+            <!-- KOLOM KIRI: Informasi & Detail Profil (Lebar 7 Kolom) -->
+            <div class="md:col-span-7 flex flex-col justify-center space-y-4 md:space-y-4 pr-0 md:pr-4 overflow-y-auto max-h-[75vh] md:max-h-full">
+                
+                <!-- Judul Section -->
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-cursive text-[#00000] tracking-tight">about.</h1>
                 </div>
-                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
-                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Program Studi</p>
-                    <p class="text-lg font-bold text-blue-400 mt-1">Teknik Komputer</p>
+
+                <!-- Card Ringkasan Data Akademik -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs md:text-sm bg-[#ece7dd] p-3 rounded-xl border border-[#ded8c9]">
+                    <div>
+                        <span class="block text-[10px] text-[#78716c] uppercase font-bold tracking-wider">Nama</span>
+                        <span class="font-bold text-[#1c1917]">Andika Ramadanu</span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-[#78716c] uppercase font-bold tracking-wider">NIM</span>
+                        <span class="font-bold text-[#1c1917]">2405110051</span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-[#78716c] uppercase font-bold tracking-wider">Prodi</span>
+                        <span class="font-bold text-[#1c1917]">Teknik Komputer</span>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] text-[#78716c] uppercase font-bold tracking-wider">Angkatan</span>
+                        <span class="font-bold text-[#1c1917]">2024</span>
+                    </div>
                 </div>
-                <div class="bg-slate-700/50 p-4 rounded-xl border border-slate-600 text-center">
-                    <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Tahun Angkatan</p>
-                    <p class="text-lg font-bold text-blue-400 mt-1">2024</p>
+
+                <!-- Teks Deskripsi Informasi UTS -->
+                <div class="space-y-3 text-xs md:text-sm leading-relaxed text-[#44403c] font-medium">
+                    
+                    <!-- Kesibukan -->
+                    <div>
+                        <h2 class="font-bold text-[#c2410c] text-xs uppercase tracking-wider mb-0.5">Kesibukan Selain Kuliah</h2>
+                        <p class="text-justify">
+                            Saat ini saya sedang fokus belajar dan mempersiapkan diri untuk perkuliahan semester 6, khususnya dalam mempelajari project yang akan menjadi bekal untuk capstone. Selain itu, saya juga mengikuti kepanitiaan UNFEST dan ELCO 2026.
+                        </p>
+                    </div>
+
+                    <!-- Cita-Cita -->
+                    <div>
+                        <h2 class="font-bold text-[#c2410c] text-xs uppercase tracking-wider mb-0.5">Cita-Cita</h2>
+                        <p class="text-justify">
+                            Cita-cita saya lanjut studi S2 atau Management Trainee (MT).
+                        </p>
+                    </div>
+
+                    <!-- Bidang IT Impian -->
+                    <div>
+                        <h2 class="font-bold text-[#c2410c] text-xs uppercase tracking-wider mb-0.5">Bidang IT yang Ingin Didalami (Expertise)</h2>
+                        <p class="text-justify">
+                            <strong class="text-[#1c1917]">Cyber Security, Artificial Intelligence, IT Project, atau UI/UX.</strong> Saya tertarik pada bidang Cyber Security, Artificial Intelligence, IT Project, dan UI/UX Designer karena bidang-bidang tersebut memiliki peran penting dalam perkembangan teknologi. Saya ingin menambah pengalaman dan pemahaman dalam mengembangkan teknologi, mulai dari menjaga keamanan sistem, memanfaatkan kecerdasan buatan, mengelola proyek IT, hingga membuat aplikasi yang mudah dan nyaman digunakan oleh pengguna.
+                        </p>
+                    </div>
+
                 </div>
+
             </div>
 
-            <hr class="border-slate-700">
-
-            <!-- Detail Pertanyaan UTS -->
-            <div class="space-y-4">
+            <!-- KOLOM KANAN: Photostrip / Photobooth Frame (Lebar 5 Kolom) -->
+            <div class="md:col-span-5 flex flex-col items-center justify-center relative py-2 md:py-0">
                 
-                <!-- Kesibukan Selain Kuliah -->
-                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
-                    <div class="flex items-center space-x-3 text-indigo-400 mb-2">
-                        <i class="fa-solid fa-briefcase text-xl"></i>
-                        <h2 class="font-bold text-lg text-white">Kesibukan Selain Kuliah</h2>
+                <!-- Frame Photostrip Vertikal Retro Miring -->
+                <div class="bg-white p-3 rounded-sm shadow-2xl border border-stone-300 transform rotate-3 hover:rotate-0 transition-transform duration-300 w-44 md:w-52 space-y-2.5">
+                    
+                    <!-- Frame Foto 1 -->
+                    <div class="w-full aspect-[4/3] bg-stone-200 overflow-hidden border border-stone-200">
+                        <img src="dika.jpeg" 
+                             alt="Andika Ramadanu" 
+                             class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <p class="text-slate-300 leading-relaxed pl-8">
-                        Mengikuti kepanitiaan UNFEST dan ELCO 2026, selain itu saya sering berolahraga lari.
-                    </p>
-                </div>
 
-                <!-- Cita-Cita -->
-                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
-                    <div class="flex items-center space-x-3 text-emerald-400 mb-2">
-                        <i class="fa-solid fa-bullseye text-xl"></i>
-                        <h2 class="font-bold text-lg text-white">Cita-Cita</h2>
+                    <!-- Frame Foto 2 -->
+                    <div class="w-full aspect-[4/3] bg-stone-200 overflow-hidden border border-stone-200">
+                        <img src="dika.jpeg" 
+                             alt="Andika Ramadanu" 
+                             class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <p class="text-slate-300 leading-relaxed pl-8">
-                        Cita-cita saya lanjut studi S2 atau mendaftar Management Trainee (MT).
-                    </p>
-                </div>
 
-                <!-- Bidang IT yang Ingin Didalami -->
-                <div class="bg-slate-700/30 p-5 rounded-xl border border-slate-700/80">
-                    <div class="flex items-center space-x-3 text-amber-400 mb-2">
-                        <i class="fa-solid fa-code text-xl"></i>
-                        <h2 class="font-bold text-lg text-white">Bidang IT yang Ingin Didalami (Expertise)</h2>
+                    <!-- Frame Foto 3 -->
+                    <div class="w-full aspect-[4/3] bg-stone-200 overflow-hidden border border-stone-200">
+                        <img src="dika.jpeg" 
+                             alt="Andika Ramadanu" 
+                             class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <p class="text-slate-300 leading-relaxed pl-8">
-                        <strong>Cyber Security</strong>, <strong>Artificial Intelligence</strong>, <strong>IT Project</strong>, atau <strong>UI/UX</strong>. Saya tertarik pada bidang Cyber Security, Artificial Intelligence, IT Project, dan UI/UX Designer karena bidang-bidang tersebut memiliki peran penting dalam perkembangan teknologi. Saya ingin menambah pengalaman dan pemahaman dalam mengembangkan teknologi, mulai dari menjaga keamanan sistem, memanfaatkan kecerdasan buatan, mengelola proyek IT, hingga membuat aplikasi yang mudah dan nyaman digunakan oleh pengguna.
-                    </p>
+
+                    <!-- Caption Photostrip -->
+                    <div class="text-center pt-1">
+                        <span class="text-[9px] font-mono text-stone-400 tracking-widest uppercase">DIKA</span>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-        <!-- Footer -->
-        <div class="bg-slate-900/80 p-4 text-center border-t border-slate-700 text-slate-500 text-xs">
-            Tugas UTS Mata Kuliah Teknologi Web &copy; 2026
+        <!-- Footer / Branding Bawah -->
+        <div class="z-10 flex justify-between items-center pt-2 border-t border-[#ded8c9] mt-3 text-[10px] text-[#78716c]">
+            <div>
+                Tugas UTS Mata Kuliah Teknologi Web &copy; 2026
+            </div>
+            <div class="flex items-center space-x-1 font-bold text-[#c2410c] text-xs">
+                <span class="lowercase tracking-tight font-cursive text-base">uts teknologi web</span>
+            </div>
         </div>
 
     </div>
